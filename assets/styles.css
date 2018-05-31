@@ -80,11 +80,16 @@ footer {
 /* ============================================
  * Logo
  * ===========================================*/ 
+.logo-container {
+  margin: 0 auto;
+  width: 140px;
+  height: 120px;
 
-.logo {
+}
+#logo {
   transition: transform .5s ease-out;
 }
-.logo:hover {
+#logo:hover {
   transform: scale(1.25);
 }
 
@@ -146,4 +151,33 @@ footer {
 }
 .stone {
   fill: #52595E;
+}
+
+.logo-0{
+  fill:#BA8058;
+}
+.logo-1{
+  fill:#EAAA7F;
+}
+.logo-2{
+  fill:#F4C6A6;
+}
+
+.logo-1 {
+  display: none;
+}
+.sm-only {
+  display: block;
+  color: #ba8058;
+}
+
+@media (min-width: 425px){
+  .logo-1 {
+    display: block;
+  }
+
+  .sm-only {
+    display: none;
+  }
+  
 }
