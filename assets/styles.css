@@ -1,0 +1,149 @@
+/* SVG Animations
+ * Author: Chris Howell
+ * Project 8
+ * Date: 05/31/2018
+*/
+
+
+/* ============================================
+ * Base
+ * ===========================================*/ 
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0 url('svgs/background.svg');
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.st0{
+  fill: #39ADD1;
+}
+
+li:hover a,
+li:hover .st0{
+  color: #111;
+  fill: #111;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+/* ============================================
+ * Logo
+ * ===========================================*/ 
+
+.logo {
+  transition: transform .5s ease-out;
+}
+.logo:hover {
+  transform: scale(1.25);
+}
+
+/* ============================================
+ * Menu
+ * ===========================================*/ 
+.links li svg{
+  transition: transform .4s ease-out;
+}
+.links li svg:hover{
+  transform: rotate(35deg);
+}
+
+/* ============================================
+ * Corgis
+ * ===========================================*/ 
+.corgis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  color: #ba8058;
+  font-weight: 400;
+}
+.corgis > li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 20%;
+}
+
+.icon{
+  position: relative;
+  padding-left: 15px;
+}
+
+/* ============================================
+ * SVGs
+ * ===========================================*/ 
+.nose_and_eyes {
+  fill:#2D3339;
+}
+.brows {
+  fill:#DA8058;
+}
+
+.white{
+  fill: #FBFEFF;
+}
+.sable {
+  fill: #B97F5B;
+}
+.fawn {
+  fill: #E9AA82;
+}
+.red {
+  fill: #834B29;
+}
+.stone {
+  fill: #52595E;
+}

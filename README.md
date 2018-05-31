@@ -1,2 +1,2 @@
-# svg-animations
+# SVG Animations
 FEWD Project 8
